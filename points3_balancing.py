@@ -68,6 +68,7 @@ def cal_intersection(a0, a1, a2, theta1, theta2):
         x1 = (-b - math.sqrt(delta)) / (a * 2)
         y1 = (k + (1 - math.cos(theta)) * x1) / math.sin(theta)
 
+    # 通过旋转变换将基于设定第一次加重在x轴的坐标系变化到实际坐标系
     x1_ = x1 * math.cos(theta1) - y1 * math.sin(theta1)
     y1_ = x1 * math.sin(theta1) + y1 * math.cos(theta1)
 
